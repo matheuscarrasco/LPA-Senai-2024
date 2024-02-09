@@ -1,9 +1,52 @@
+//algoritmo: do senai
+
+// Autor: @Matheus Carrasco
+// 09/02/2024
+
 programa
 {
 	
 	funcao inicio()
 	{
-		escreva("Olá Mundo")
+	//Os preços dos produtos são constantes
+	const real PRECO_COXINHA = 6.99
+	const real PRECO_REFRI = 10.00
+	const real PRECO_SOBREMESA = 8.00
+
+	inteiro qtd_coxinha, qtd_refri, qtd_sobremesa
+	real tot_coxinha, tot_refri, tot_sobremesa, tot_total
+
+	escreva ("Quantas coxinhas você deseja? ")
+	leia (qtd_coxinha)
+
+	escreva ("Quantas sobremesas você deseja? ")
+	leia (qtd_sobremesa)
+
+	escreva ("Quantos refris você deseja? ")
+	leia (qtd_refri)
+	
+	
+		/*
+		 * Cáçculo dos valores a serem pagos
+		 * O cálculo é feito multiplicanto a quantidades de itens vendidos pelo preço de cada item
+		*/
+
+		tot_coxinha = PRECO_COXINHA * qtd_coxinha
+		tot_refri = PRECO_REFRI * qtd_refri
+		tot_sobremesa = PRECO_SOBREMESA * qtd_sobremesa
+
+		tot_total= tot_coxinha + tot_refri + tot_sobremesa 
+
+		limpa()
+
+		escreva("Bem vindo a KANTINA do Senai\n")
+		escreva("=======================================\n")
+		escreva("Você comprou ", qtd_coxinha, " coxinhas.\n")
+		escreva("Você comprou ", qtd_refri, " refris.\n")
+		escreva("Você comprou ", qtd_sobremesa, " sobremesa.\n")
+		escreva("=======================================\n")
+		escreva("Total da compra: R$ ", tot_total, "\n")
+          
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -11,7 +54,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 12; 
+ * @POSICAO-CURSOR = 1271; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

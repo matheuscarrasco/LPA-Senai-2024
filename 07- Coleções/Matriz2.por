@@ -32,11 +32,26 @@ programa
 
 	funcao exibir (real coordenadas [][])
 	{
+		escreva ("Lat\tLong\n")
+		escreva ("===\t====\n")
 		para (inteiro i = 0 ; i < u.numero_linhas (coordenadas); i ++)
 		{
 			para (inteiro j = 0; j < u.numero_colunas (coordenadas); j++) 
 			{
-				escreva (coordenadas [i][j], "\t")			
+				real coordenada = coordenadas [i][j] 
+				se (coordenada >= 0)
+				{
+					escreva (" ")	
+				}	
+				se (coordenada < 10.0 e coordenada > -10.0)
+				{
+					escreva (" ")
+				}
+				se ( coordenada < 100.0 e coordenada > -100.0)
+				{
+					escreva (" ")
+				}
+				escreva (coordenadas [i][j], "\t")	
 			}
 			escreva ("\n")
 		}
@@ -51,7 +66,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 837; 
+ * @POSICAO-CURSOR = 1050; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

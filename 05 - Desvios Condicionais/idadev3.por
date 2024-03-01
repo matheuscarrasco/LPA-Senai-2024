@@ -19,11 +19,12 @@ programa
 	limpa()
 
 		se (idade<18)
-	{escreva (" \n Você é fiot")
-	}
-	se (idade >=18)
-	{
-		escreva (" \n Você não é mais fiot")
+		{
+			escreva (" \n Você é fiot")
+		}
+		se (idade >=18)
+		{
+			escreva (" \n Você não é mais fiot")
 		}
 	
 	}
@@ -33,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 288; 
+ * @POSICAO-CURSOR = 255; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

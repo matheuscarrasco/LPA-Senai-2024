@@ -5,6 +5,7 @@ programa
 	{
 		inteiro n = 7
 		escreva ("O fatorial de ", n, " é ", fatorial (n), "\n")
+		escreva ("O fatorial de ", n, " usando o fatorial2() é  ", fatorial2 (n), "\n")
 	}
 	funcao inteiro fatorial (inteiro n)
 	{
@@ -15,8 +16,15 @@ programa
 			resultado = resultado * i
 			i --
 		}
-		retorne resultado
-		
+		retorne resultado	
+	}
+	funcao inteiro fatorial2(inteiro n)
+	{
+		se (n == 1 ou n == 0 )
+		{
+			retorne 1
+		}
+		retorne n * fatorial2(n-1) //recursividade
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -24,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 48; 
+ * @POSICAO-CURSOR = 492; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
